@@ -1,7 +1,6 @@
 import cv2
 import mediapipe as mp
 import time
-import webbrowser
 import HandTrackingModule as htm
 
 
@@ -16,9 +15,6 @@ while True:
     if len(lmList) != 0:
         print(lmList[4])
 
-        if lmList[4]:
-            webbrowser.open("www.google.com")
-            break
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
